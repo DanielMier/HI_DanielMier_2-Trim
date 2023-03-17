@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_json_xml.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/953f80cad3.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Hito Grupal</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu_principal">
+              <label class="lnr lnr-menu"></label>
+          
+          
+          <div class="menu">
+              <div class="line"><a href="../index.php"><label class="lnr lnr-home"><font>Home</font></label></a></div>
+              <div class="line"><a href=""><label class="lnr lnr-inbox"><font>Categorias</font></label></a></div>
+              <div class="line"><a href="../controlador/login.php"><label class="lnr lnr-picture"><font>posts</font></label></a></div>
+
+
+
+              <div class="line"><a href="contacto.html"><label class="lnr lnr-bullhorn"><font>RRSS</font></label></a></div>
+          </div>
+      </div>
+        <!--      menu hamburgesa -->
+        <div class="menu_desplegable">
+          <button onclick="myFunction()" class="boton_menu"><i class="fa-solid fa-bars"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="pag/json.html">JSON</a>
+            <a href="pag/xml.php">XML</a>
+            <a href="pag/contacto.html">Contacto</a>
+          </div>
+        </div>
+    </header>
+
+    <!--     Menu navegacion  -->
+    <div id="header">
+      <nav>
+          <ul>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="xml.php">XML</a></li>
+            <li><a href="json.html">JSON</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+  </div>
+
+  <section class="xml_json">
+    <div id="xml_json">
+      <div class="titulo" class="container">
+        <h2>JSON</h2>
+      </div>
+      <div class="contenido" class="row">
+          <div class="col-10 col-lg-10 col-md-8 col-sm-6">
+              <div class="bloque">
+                  <h4>Orígenes de JSON</h4>
+                  <p> JSON es un formato ligero de intercambio de datos, basado en un subconjunto de la sintaxis de objetos en JavaScript. Desde su creación en 2000, se ha convertido en uno de los formatos más populares para intercambiar datos, gracias a su sencillez y eficiencia. JSON es compatible con una amplia gama de aplicaciones y lenguajes de programación, y se utiliza comúnmente en aplicaciones web para representar y transferir información en la red.</p>
+              </div>
+              <div class="bloque">
+                <h4>Introduccion:</h4>
+                <p>JSON son las siglas de "JavaScript Object Notation" (Notación de Objetos de JavaScript en español) y es un formato de intercambio de datos ligero y fácil de leer y escribir.<br>
+                  Se utiliza para representar datos estructurados como objetos, arrays, cadenas, números, valores booleanos y nulos, y es comúnmente utilizado para transferir datos entre aplicaciones web y servicios web en el formato de texto. JSON fue desarrollado como una alternativa más liviana y fácil de usar que XML, especialmente para aplicaciones web que utilizan JavaScript.<br>
+                  En JSON, los datos se organizan en pares de "clave": "valor" separados por comas y encerrados entre corchetes {}. Los objetos JSON pueden anidarse dentro de otros objetos y también se pueden utilizar arrays [] para representar colecciones de datos.<br>
+                  JSON es un formato de datos muy flexible y se puede utilizar con cualquier lenguaje de programación que pueda analizar y generar texto. Es una opción popular para el intercambio de datos en la web y es compatible con muchos lenguajes de programación y plataformas.<br></p>
+            </div>
+              <div class="bloque">
+                  <h4>Aplicaciones para JSON:</h4>
+                  <p>Intercambio de información entre aplicaciones y sistemas, especialmente en aplicaciones web y móviles.<br>
+                    Representación de datos en aplicaciones de cliente-servidor.<br>
+                    Serialización y deserialización de objetos en lenguajes de programación.<br>
+                    Almacenamiento de datos en bases de datos NoSQL y documentales.<br>
+                    </p>
+              </div>
+              <div class="bloque">
+                <h4>Normas de uso:</h4>
+                <p>Debe ser un objeto o un arreglo.<br>
+                  Las propiedades deben tener un nombre en formato de cadena.<br>
+                  Los valores pueden ser números, cadenas, objetos, arreglos, valores booleanos o null.<br>
+                  Las propiedades y los valores deben estar separados por dos puntos.<br>
+                  Las parejas clave-valor deben estar separadas por comas.<br>
+                  Las comillas simples no están permitidas.<br>
+                  La llave en cada JSON debe ser única y debe estar entre comillas dobles.<br>
+                  Los números no deben ir entre comillas dobles, de lo contrario se tratarán como cadenas de texto.<br>
+                  El tipo de dato null no debe ir entre comillas dobles.<br>
+                  Los valores booleanos solo pueden ser verdaderos o falsos.<br>
+                  Cada par llave:valor debe terminar con una coma, excepto el último elemento.<br>
+                  Un solo objeto dentro de un arreglo debe terminar también con una coma.<br>
+                  </p>
+            </div>
+            <div class="bloque">
+              <h4>Caracteristicas:</h4>
+              <p>Ligereza: JSON es un formato de intercambio de datos muy liviano y fácil de leer y escribir en comparación con otros formatos como XML. Debido a su estructura simplificada, es fácil de leer y entender tanto para humanos como para máquinas.<br>
+                Independiente de la plataforma: los datos en formato JSON se pueden leer y procesar en cualquier plataforma o sistema operativo, lo que los hace muy útiles para la interoperabilidad entre sistemas.<br>
+                Flexibilidad: JSON es muy flexible y se puede personalizar para satisfacer las necesidades específicas de una aplicación. Es muy común en la web debido a que el formato de datos se puede utilizar con cualquier lenguaje de programación.<br>
+                Legibilidad: los documentos JSON están escritos en texto plano, lo que significa que son legibles tanto por humanos como por máquinas.<br>
+                Soporte para tipos de datos básicos: JSON admite una variedad de tipos de datos, como números, cadenas, valores booleanos, matrices y objetos.<br>
+                Facilidad de uso con JavaScript: JSON es un formato de datos que fue diseñado para su uso con JavaScript, lo que significa que se integra bien con las aplicaciones web que utilizan JavaScript.<br>
+                Soporte para anidamiento de objetos y matrices: JSON admite la anidación de objetos y matrices, lo que significa que se pueden representar estructuras de datos complejas de manera clara y concisa.<br>
+                Fácil conversión: JSON se puede convertir fácilmente a otros formatos de datos, como XML, lo que permite la integración con sistemas que utilizan diferentes formatos de datos.<br></p>
+          </div>
+          <div class="bloque">
+            <h4>Sintaxis:</h4>
+            <p>La sintaxis de JSON (JavaScript Object Notation) se basa en la definición de objetos y arrays, que se utilizan para describir los datos. La sintaxis básica de JSON se compone de los siguientes elementos:<br><br>
+              Objeto: Los objetos se definen mediante llaves {} y se componen de una serie de pares clave-valor.<br>
+              Array: Los arrays se definen mediante corchetes [] y se utilizan para representar una colección de valores.<br>
+              Valor: Un valor puede ser una cadena de caracteres, un número, un objeto, un array, un valor booleano (true o false) o null.<br></p>
+        </div>
+            <div id="bloque_horizontal" >
+              <ul>
+                  <li>Enlaces de interes y web grafia</li>
+                  <li><a href="https://desarrolloweb.com/articulos/450.php">Enlace 1</a></li>
+                  <li><a href="https://arxiu-web.upf.edu/hipertextnet/numero-3/xml.php#:~:text=El%20lenguaje%20XML%20">Enlace 2</a></li>
+                  <li><a href="http://profesores.elo.utfsm.cl/~agv/elo330/2s04/projects/XML/XML.htm">Enlace 3</a></li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-2 col-lg-2 col-md-2 col-sm-1">
+              <div id="bloque_lateral" >
+                  <ul>
+                      <li>Enlaces de interes y web grafia</li>
+                      <li><a href="https://www.mclibre.org/consultar/informatica/lecciones/formato-json.html#:~:text=El%20formato%20JSON%20fue%20definido,y%20una%20implementaci%C3%B3n%20en%20Java.">Enlace 1</a></li>
+                      <li><a href="https://desarrolloweb.com/home/json">Enlace 2</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+<!--     Pie de pagina -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <ul>
+            <li><a href="contacto.html">Contactanos</a></li>
+            <li><a href="#">Politica de privaciad</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+          </ul>
+        </div>
+  
+        <div id="copy" class="row">
+          Copyright © - Derechos Reservados || Daniel Mier
+
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
