@@ -1,0 +1,79 @@
+/*-------------------------JSON y XML------------------------------*/
+.contenido{
+    display:flex;
+    flex-direction: row;
+    padding-top: 0.63rem;
+    margin: 0.63rem;
+}
+#xml_json{
+    border-radius: 25px;
+    box-shadow: 0 0 0.938rem 0.313rem rgba(0, 0, 0, 0.219);
+}
+.bloque{
+    margin: 0.63rem 0.63rem 0 0.63rem ;
+}
+#bloque_lateral ul{
+    list-style: none;
+}
+#bloque_lateral li{
+    padding: 0.625rem;
+}
+#bloque_lateral{
+    height: 100%;
+}
+#bloque_lateral a{
+    color: black;
+}
+#bloque_lateral a:hover{
+    text-decoration: none;
+    color: blue ;
+}
+.bloque p{
+    padding: 0.938rem;
+}
+.titulo{
+    text-align: center;
+    padding: 0.63rem;
+    margin: 0.63rem;
+}
+.xml_json{
+    padding: 6.25rem;
+}
+#bloque_horizontal{
+    display: none;
+}
+/*---------Metodos responsive------------------*/
+
+@media (max-width: 991.98px) 
+{
+    .xml_json{
+        padding-left: 0;
+        padding-right: 0;
+        margin: 1rem;
+    }
+}
+@media (max-width: 1500px){
+    #bloque_lateral{
+        display: none;
+    }
+    #bloque_horizontal{
+        display: block;
+        height: 12.5rem !important;
+    }
+    #bloque_horizontal ul{
+        list-style: none;
+    }
+    #bloque_horizontal li{
+        padding: 0.625rem;
+    }
+    #bloque_horizontal{
+        height: 100%;
+    }
+    #bloque_horizontal a{
+        color: black;
+    }
+    #bloque_horizontal a:hover{
+        text-decoration: none;
+        color: blue ;
+    }
+}
